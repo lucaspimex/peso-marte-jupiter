@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Descubre tu peso en otros planetas!</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="favicon" type="image/png" href="rocket.png" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <header>
+      <div class="menu">
+        <div class="contenedor">
+          <div class="logo">DannaMez</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="texto">
+      <h1 class="texto">En la Tierra pesas distinto que en Marte y Júpiter</h1>
+      <br>
+      <p>Planetas donde pesas mucho menos!</p>
+    </div>
+
+    <div class="principal contenedor">
+      <article>
+        <h2>Cuánto pesas en Marte?</h2>
+        <p class="fecha">Tu peso en Marte es:</p>
+        <p><strong> ... kilos!</strong></p>
+      </article>
+
+      <article>
+        <h2>Cuánto pesas en Júpiter?</h2>
+        <p class="fecha">Tu peso en Júpiter es:</p>
+        <p><strong> ... kilos!</strong></p>
+      </article>
+
+    </div>
+
+    <script>
+      var usuario = prompt("Cuál es tu peso en el planeta tierra?");
+      var planeta = prompt("Elige tu planeta, 1 es Marte, 2 es Júpiter");
+      var peso = parseInt(usuario);
+      var g_tierra = 9.8;
+      var g_marte = 3.7;
+      var g_jupiter = 24.8;
+      var peso_final;
+      peso_final = peso * g_marte / g_tierra;
+      peso_final = parseInt(peso_final);
+      document.write("Tu peso en marte es <strong>" + peso_final + " kilos</strong></style>");
+    </script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="particles.js"></script>
+    <script src="particulas.js"></script>
+  </body>
+</html>
